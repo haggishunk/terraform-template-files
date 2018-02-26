@@ -27,4 +27,4 @@ alias pn='ps aux | grep'
 COL1='\[\033[0;38;5;${col1}m\]'
 COL2='\[\033[0;38;5;${col2}m\]'
 # prompt
-PS1="$COL2[\u@\h \A \W]\$$COL1 "
+PS1="$COL2[\u@\h \A \W]$$COL1 "
