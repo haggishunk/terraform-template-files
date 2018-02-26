@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 set -euxo pipefail
 sudo useradd -d /home/${user} -m ${user}
+sudo chsh -s /bin/bash ${user}
 echo '${user} ALL = (root) NOPASSWD:ALL' | sudo tee /etc/sudoers.d/${user}
 sudo chmod 0440 /etc/sudoers.d/${user}
 sudo mkdir /home/${user}/.ssh
