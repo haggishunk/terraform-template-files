@@ -2,7 +2,7 @@
 
 set -euxo pipefail
 sudo useradd -m ${user}
-sudo chsh -s ${bash_path} ${user}
+sudo chsh -s /bin/bash ${user}
 echo '${user} ALL = (root) NOPASSWD:ALL' | sudo tee /etc/sudoers.d/${user}
 sudo chmod 0440 /etc/sudoers.d/${user}
 sudo mkdir $HOME/.ssh
