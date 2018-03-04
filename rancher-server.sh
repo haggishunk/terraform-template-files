@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 RANCHER_FLAG=$(docker ps | grep "rancher/server")
 

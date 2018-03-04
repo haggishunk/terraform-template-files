@@ -1,6 +1,6 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-mkdir /home/${user}/certs
-mv /home/${user}/${cert_name}.key /home/${user}/certs/${cert_name}.key
-mv /home/${user}/${cert_name}.crt /home/${user}/certs/${cert_name}.crt
+mkdir $HOME/certs
+mv $HOME/${cert_name}.key $HOME/certs/${cert_name}.key
+mv $HOME/${cert_name}.crt $HOME/certs/${cert_name}.crt
 
