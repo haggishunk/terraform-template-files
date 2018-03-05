@@ -19,4 +19,4 @@ sudo apt-get -y install \
     kubelet=${kube_version}-00 \
     kubectl=${kube_version}-00
 wget https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
-echo 'source <(kubectl completion bash)' | sudo tee -a .bashrc
+echo 'source <(kubectl completion bash)' | tee -a .bashrc
