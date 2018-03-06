@@ -11,5 +11,5 @@ sudo chown -R ${user}:${user} /home/${user}
 sudo chmod 0700 /home/${user}/.ssh
 sudo chmod  600 /home/${user}/.ssh/authorized_keys
 
-sudo cat /etc/ssh/sshd_conf | sed 's/^PermitRootLogin yes/PermitRootLogin no/' | sudo tee /etc/ssh/sshd_conf
+sudo cat /etc/ssh/sshd_config | sed 's/^PermitRootLogin yes/PermitRootLogin no/' | sudo tee /etc/ssh/sshd_config
 sudo systemctl restart sshd
