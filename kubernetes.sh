@@ -7,7 +7,7 @@ sudo add-apt-repository \
     $(lsb_release -cs) \
     stable"
 sudo apt-get -y update
-sudo apt-get -y upgrade
+#sudo apt-get -y upgrade
 sudo apt-get -y install docker-ce
 sudo usermod -aG docker ${user}
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | \
