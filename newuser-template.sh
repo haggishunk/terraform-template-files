@@ -12,4 +12,4 @@ sudo chmod 0700 /home/${user}/.ssh
 sudo chmod  600 /home/${user}/.ssh/authorized_keys
 
 sudo sed -i 's/^PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
-sudo systemctl restart sshd
+sudo systemctl restart sshd || sudo service ssh restart
