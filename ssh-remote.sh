@@ -4,7 +4,7 @@
 cat ~/*.ssh.config | tee ~/.ssh/config
 
 # append hosts to /etc/hosts file
-cat ~/hosts_file | sudo tee -a /etc/hosts
+cat ~/hosts_* | sudo tee -a /etc/hosts
 
 # generate a local public/private ssh keypair if one does not exist
 if [[ ! -f /home/${user}/.ssh/id_rsa.pub ]]; then
